@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Book Management</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <h1>Library Management</h1>
+        </a>
+    </nav>
+    <div class="title">
+        <h1>Book Management</h1>
+    </div>
+    <div class="form">
+        <div>
+            <h2>Add Book</h2>
+            <form action="">
+                <fieldset>
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Name" id="name">
+                    <div>
+                        <label for="name-error" id="nameError" class="error"></label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <label for="">Author</label>
+                    <input type="text" placeholder="Author" id="author">
+                    <div>
+                        <label for="author-error" id="authorError" class="error"></label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <label for="">Publisher</label>
+                    <input type="text" placeholder="Publisher" id="publisher">
+                    <div>
+                        <label for="publisher-error" id="publisherError" class="error"></label>
+                    </div>
+                </fieldset>
+               <fieldset>
+                    <label for="">Publishing Date</label>
+                    <input type="date" placeholder="Date" id = 'date'>
+                    <div>
+                        <label for="date-error" id="dateError" class="error"></label>
+                    </div>
+               </fieldset>
+               <button type="button" class="submit" id="add" onclick="Add()">Add Book</button>
+               <button type="button" class="submit" id="edit" style="display: none;">Save Changes</button>
+            </form>
+        </div>
+    </div>
+    <div class="table">
+        <table >
+            <caption>Books available in Library</caption>
+            <thead>
+                <tr>
+                    <th>Sr</th>
+                    <th>Book</th>
+                    <th>Author</th>
+                    <th>Publisher</th>
+                    <th>Publishing Date</th>
+                    <th style="width: 100px;">Edit</th>
+                    <th style="width: 100px;">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="table">
+
+            </tbody>
+        </table>
+    </div>
+    <div class="btns">
+        <div class="btn-container">
+            <a href="index.html">
+                <button>Home</button>
+            </a>
+            <a href="author.html">
+                <button>Author</button>
+            </a>
+            <a href="publisher.html">
+                <button>Publishers</button>
+            </a>
+        </div>
+    </div>
+    <script src = "libraryManagement.js"></script>
+</body>
+</html>
