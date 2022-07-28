@@ -86,7 +86,7 @@ function displayData(){
         data = JSON.parse(arr);
     }
     let rows = '';
-    data.forEach((item, index) => {
+    data.map((item, index) => {
         rows += `<tr class = 'tr'>
             <td>${index + 1}</td>
             <td>${item['name']}</td>
